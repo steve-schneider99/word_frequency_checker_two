@@ -3,6 +3,7 @@ require('./app')
 Capybara.app = Sinatra::Application
 
 describe('the returned frequency path', {:type => :feature}) do
+
   it('returns returned_frequency') do
       visit('/')
       fill_in("input_sentence", :with => "I like cats")
@@ -18,4 +19,5 @@ describe('the returned frequency path', {:type => :feature}) do
       click_button('Submit')
       expect(page).to have_content("0")
   end
+
 end

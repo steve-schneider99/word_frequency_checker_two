@@ -26,4 +26,5 @@ describe('String#)get_frequency') do
   it('will return a number if a capitalized word appears in a string of non-capitalizaed words') do
     expect(("i like cats").get_frequency("Cats")).to(eql(1))
   end
+  
 end
